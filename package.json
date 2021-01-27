@@ -1,0 +1,23 @@
+{
+  "name": "daniil",
+  "version": "1.0.0",
+  "description": "New project - 15 laba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TKUIK2020/js-Daniil2117.git"
+  },
+  "author": "Bozhko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TKUIK2020/js-Daniil2117/issues"
+  },
+  "homepage": "https://github.com/TKUIK2020/js-Daniil2117#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "random-image-creator": "file:create-random-image"
+  }
+}
