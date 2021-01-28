@@ -4,6 +4,7 @@
   "description": "Laba 16",
   "main": "index.js",
   "dependencies": {
+    "random-image-creator": "^2.0.2",
     "uglify-js": "^3.12.5"
   },
   "devDependencies": {
@@ -15,7 +16,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix --config=.eslintrc.js index.js",
     "minify:js": "uglifyjs *.js -o dist/js/app.js"
-
   },
   "repository": {
     "type": "git",
