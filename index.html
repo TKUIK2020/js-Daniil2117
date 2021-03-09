@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Изучаем Vue.js</title>
+</head>
+<div id="app">
+    <input @input="generateArray" v-model="inputValue" type="text">
+      <ul>
+        <li v-for="(item, index) in myArr">
+        <h1><span>{{base}}</span>
+        <sup>{{minExp + index}}</sup> = {{item}} </h1>
+        </li>
+      </ul>
+</div>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+    el:'#app',
+    data:{
+    inputValue: 0,
+    myArr: [],
+    minExp: 10,
+    base: 2
+    },
+    methods: {
+    generateArray: function(){
+    let i = 0;
+    const arr = [];
+    while(i < this.inputValue){
+    arr[i] = this.base ** (this.minExp + i);
+    i++
+    }
+  this.myArr = arr;
+  }
+  }
+  })
+  </script>
+</body>
+</html>
